@@ -5,7 +5,7 @@ public class Task {
 
     public Task(String description) {
         if (description == null || description.trim().isEmpty()) {
-            throw new IllegalArgumentException("Task description cannot be empty.");
+            System.out.println("Error: Task description cannot be empty.");
         }
         this.description = description;
         this.isCompleted = false;
@@ -36,7 +36,7 @@ public class Task {
 
     public void setDescription(String newDescription) {
         if (newDescription == null || newDescription.trim().isEmpty()) {
-            throw new IllegalArgumentException("New description cannot be empty.");
+            System.out.println("Error: Task description cannot be empty.");
         }
         this.description = newDescription;
     }
